@@ -9,11 +9,11 @@
 To run the web scraping task, you need to run the file `utils/url_scraper.py`. It is self contained but needs the right enviornment to have been setup a-priori. I have already run and saved the output to `outputs/parsed_urls.txt`, so this need not be run again.
 
 It works as follows:
-* Global Variables: The script defines several global variables, including main_queue, parsed_links_queue, parsed_links, session, f_out, and visited_urls.
-* `get_url Function`: This is an asynchronous function that takes a URL as input, sends a GET request to the URL using `aiohttp`, and returns the response text. 
-* `worker Function`: This is an asynchronous function that runs indefinitely. It uses `selenium` to load a webpage, parses the HTML using `BeautifulSoup`, and extracts links that start with specific urls. The extracted links are then added to the `parsed_links_queue`.
-* `consumer Function`: This function also runs asynchronously. It consumes URLs from the `parsed_links_queue`, checks if the URL has already been parsed, and if not, adds it to the parsed_links variable and writes it to a file.
-* `main` : The main function is the entry point of the script. It initializes the session and file handle for saving the urls, sets up the seed URL, and starts the worker and consumer functions.
+1. Global Variables: The script defines several global variables, including main_queue, parsed_links_queue, parsed_links, session, f_out, and visited_urls.
+2. `get_url Function`: This is an asynchronous function that takes a URL as input, sends a GET request to the URL using `aiohttp`, and returns the response text. 
+3. `worker Function`: This is an asynchronous function that runs indefinitely. It uses `selenium` to load a webpage, parses the HTML using `BeautifulSoup`, and extracts links that start with specific urls. The extracted links are then added to the `parsed_links_queue`.
+4. `consumer Function`: This function also runs asynchronously. It consumes URLs from the `parsed_links_queue`, checks if the URL has already been parsed, and if not, adds it to the parsed_links variable and writes it to a file.
+5. `main` : The main function is the entry point of the script. It initializes the session and file handle for saving the urls, sets up the seed URL, and starts the worker and consumer functions.
 
 
 ## QA system and Streamlit app
