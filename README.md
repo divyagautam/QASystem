@@ -35,18 +35,20 @@ You can find screenshots of some of the runs at the end of this document
 * The output is saved in `outputs/llm_outputs.json`, which can be used for manual evaluation.
 
 ## Project Design
-### RAG: The file `utils/rag.py` contains the code for RAG.
+### RAG: 
+#### The file `rag.py` contains the code for RAG.
 * Embeddings and Vector Store:
     * For the vector store, I used the `InMemoryVectorStore` from Langchain. This is a simple in-memory store for vectors, which is useful for small datasets.
     * For the embeddings I used the `HuggingFaceEmbeddings` from Langchain. This is a pre-trained model from HuggingFace that can be used to generate embeddings for text.
     * I split the documents into chuks with some overlap before storing them in the vector store, with appropriate metadata.
-    * Since the vectorstore was small in size, the code provides an option to save the vectorstore to a file locally, to be reloaded when needed.
+    * Since the vectorstore was small in size, the code provides an option to save the vectorstore to a file locally at `vectorDB/inmemory_langchain_db`, to be reloaded when needed.
 * Retriever:
     * I have used the InMemoryVectorStore as retriever. 
     * The search function used in the code is `mmr` or `Maximal Marginal Relevance`, which selects examples based on a combination of which examples are most similar to the inputs, while also optimizing for diversity
     * During evaluation of the retriever, I have used `Mean Reciprocal Rank (MRR)`, `precison@k` and `recall@k` as metrics to measure the quality of the retriever.
 
-### Question and Answer generation: The file `qa_system.py` contains the code for the QA system
+### Question and Answer generation: 
+#### The file `qa_system.py` contains the code for the QA system
 * Framework: I have used `LangChain` with Google's latest `Gemini 2.0 Pro (experimental)` model. The model can be swapped for any other model from LangChain.
 * Answer generation:
     * The code implements a small LCEL chain that pipes the context retrieval, prompt creation and querying of the LLM.

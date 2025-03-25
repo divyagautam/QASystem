@@ -81,7 +81,7 @@ def create_embeddings():
     vectorstore.add_documents(documents=chunks)
     
     # Save the vectorstore in a file locally
-    if not os.path.exists("./inmemory_langchain_db"):
-        vectorstore.dump("./inmemory_langchain_db")
+    if not os.path.exists("./vectorDB/inmemory_langchain_db"):
+        vectorstore.dump("./vectorDB/inmemory_langchain_db")
             
     return vectorstore

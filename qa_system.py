@@ -13,7 +13,7 @@ from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_google_genai import GoogleGenerativeAI
 
-from utils.rag import create_embeddings
+from rag import create_embeddings
 from utils.logging import LoggingCallback
         
 class QASystem:
