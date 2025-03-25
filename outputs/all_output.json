@@ -1,0 +1,101 @@
+[
+  {
+    "name": "GoogleGenerativeAI",
+    "run_id": "d41c9b76-2a54-494a-bb0f-c7dcf334b5d4",
+    "prompt": [
+      "You are a helpful assistant for Voy, a telehealth service exclusively for weight loss. \n            Answer the following question based ONLY on the provided context.\n            If the question cannot be answered from the context, \n            say \"I don't have enough information to answer that question.\"\n            Do not make up any medical information or recommendations that aren't explicitly stated in the context.\n\n            Context:\n            We're delighted that you're considering sharing Voy with the people you know! Our refer-a-friend programme is our way of saying thank you for spreading the word about your weight loss journey and our service. Here's how it works:\nFor your friend\nThey'll receive a 25% discount on their first order.\nFor you\nYou'll earn a discount on your next order based on how many friends you refer:\n\nOne or two friends: 30% off your next order\nThree or more friends: 60% off your next order\n\nHow to refer a friend\n\nLog into your Voy account\nGo to your\u00a0Refer a Friend\u00a0page (top right corner of your account)\nClick the orange 'copy' button next to your referral link\nShare this link with your friend (paste it in a message)\n\nWe completely understand that finding the right coach is important for your journey. While you\u2019re not able to make this change on your own, our friendly Support Team is here to help! Simply send us an email or start a chat in the App, and we\u2019ll take care of the switch for you as soon as possible.\nIf there\u2019s anything else we can do to support you, just let us know\u2014we\u2019re always happy to help!\n\n            Question: How do I refer a friend?\n\n            Answer:"
+    ],
+    "metdata": {
+      "ls_provider": "google_genai",
+      "ls_model_type": "llm",
+      "ls_model_name": "gemini-2.0-pro-exp-02-05",
+      "ls_temperature": 0.2
+    },
+    "response": [
+      [
+        {
+          "text": "To refer a friend:\n\n1.  Log into your Voy account.\n2.  Go to your \"Refer a Friend\" page (top right corner of your account).\n3.  Click the orange 'copy' button next to your referral link.\n4.  Share this link with your friend (paste it in a message).",
+          "generation_info": {
+            "finish_reason": "STOP",
+            "safety_ratings": [],
+            "usage_metadata": {
+              "input_tokens": 374,
+              "output_tokens": 70,
+              "total_tokens": 444,
+              "input_token_details": {
+                "cache_read": 0
+              }
+            }
+          },
+          "type": "Generation"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "GoogleGenerativeAI",
+    "run_id": "2f9ae446-5eb0-45b6-bc43-65e5f523cff7",
+    "prompt": [
+      "You are a helpful assistant for Voy, a telehealth service exclusively for weight loss. \n            Answer the following question based ONLY on the provided context.\n            If the question cannot be answered from the context, \n            say \"I don't have enough information to answer that question.\"\n            Do not make up any medical information or recommendations that aren't explicitly stated in the context.\n\n            Context:\n            Your friend needs to use this link when placing their order for the discount to apply.\nTracking your discounts\nCheck your\u00a0Refer a Friend page\u00a0to see the discount for your next order. Remember, this resets after each order is processed.\nWe're excited to have you share the Voy experience with your friends. Together, we can create a community of support on your weight loss journey!*You will receive the discount on your next order once the person you referred has placed an order and it has been approved. If they only sign up without placing an order, you will not receive the discount.\n\u00a0\nOther Discounts\nWe do not currently offer any other discounts such as NHS discounts, Key Worker discounts or Student discounts.\n\nYour plan will show as expired on a monthly basis\nYour subscription will still be active and renewed unless cancelled\n\nWhat if I reach my goal weight?\nCongratulations! We're always really happy to see people feeling happier and healthier.\nIf you've reached your goal weight, speak to our Medical Team about the best next steps for you.\nAdditional Information\n\nFor more details about our programme read of our FAQ: How does the Voy programme work\n\nIf you need to make any updates to your subscription read of our FAQ How do I update my account or subscription\n\n\nWe're here to support you throughout your weight loss journey. If you have any questions about your subscription, don't hesitate to reach out to our Customer Care Team.\n\n            Question: Are there any discounts offered?\n\n            Answer:"
+    ],
+    "metdata": {
+      "ls_provider": "google_genai",
+      "ls_model_type": "llm",
+      "ls_model_name": "gemini-2.0-pro-exp-02-05",
+      "ls_temperature": 0.2
+    },
+    "response": [
+      [
+        {
+          "text": "Yes, there is a Refer a Friend discount. You will receive a discount on your next order once the person you referred has placed an order and it has been approved. You can check your Refer a Friend page to see the discount for your next order. We do not currently offer any other discounts such as NHS discounts, Key Worker discounts, or Student discounts.",
+          "generation_info": {
+            "finish_reason": "STOP",
+            "safety_ratings": [],
+            "usage_metadata": {
+              "input_tokens": 399,
+              "output_tokens": 72,
+              "total_tokens": 471,
+              "input_token_details": {
+                "cache_read": 0
+              }
+            }
+          },
+          "type": "Generation"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "GoogleGenerativeAI",
+    "run_id": "12fdb562-a027-42b4-a5a7-af515ebca903",
+    "prompt": [
+      "You are a helpful assistant for Voy, a telehealth service exclusively for weight loss. \n            Answer the following question based ONLY on the provided context.\n            If the question cannot be answered from the context, \n            say \"I don't have enough information to answer that question.\"\n            Do not make up any medical information or recommendations that aren't explicitly stated in the context.\n\n            Context:\n            Log into your online account\nClick on Account in the left-hand menu settings\nSelect 'Manage Plans'\nChoose a date that works for you\n\nYour payment and order will then process on the new date you've selected. Please note that due to the time-sensitive administration of our prescription medications, there is a limit of 18 days to how far an order can be pushed back.\nIf you can't see this option on your account, you can contact our Customer Care Team. They will be able to adjust your next order date for you.\nIn your email, please include:\n\nThe reason why you'd like to change your next order date\nThe date that you'd like your next order to be placed\n\nHow can I change my treatment or dose?\nIf you wish to change your treatment or dose, this can be discussed with a member of our medical team. To speak with our medical team you can either:\n\nBook a consultation\nMessage our Clinical Team on your account by clicking on Support and then 'Messages'\n\nYes, for Wegovy and Mounjaro, you can start on a higher dosage if you've already begun your treatment with another provider. Here's what you need to know:\nStarting at a Higher Dose\n\nDuring our\u00a0eligibility questions, we'll ask if you are currently taking any GLP-1 medication\nSelect 'Yes' and confirm the type of medication you're taking\u00a0\nConfirm the last dose you injected and when you last took your medication\u00a0\nContinue through the eligibility questions until you reach the checkout\nSelect the dose you'd like to order and checkout - this will start your subscription\n\nProviding Evidence of Your Current Prescription\nAfter placing your order, you'll be asked to complete 3 tasks on your online account\u00a0\n\nID\nA full-length photo of yourself for the purpose of this subscription\nevidence of your current medication\n\n            Question: Can I change my dose myself at a later date?\n\n            Answer:"
+    ],
+    "metdata": {
+      "ls_provider": "google_genai",
+      "ls_model_type": "llm",
+      "ls_model_name": "gemini-2.0-pro-exp-02-05",
+      "ls_temperature": 0.2
+    },
+    "response": [
+      [
+        {
+          "text": "If you wish to change your dose, this can be discussed with a member of our medical team. To speak with our medical team you can either:\n\n*   Book a consultation\n*   Message our Clinical Team on your account by clicking on Support and then 'Messages'",
+          "generation_info": {
+            "finish_reason": "STOP",
+            "safety_ratings": [],
+            "usage_metadata": {
+              "input_tokens": 498,
+              "output_tokens": 55,
+              "total_tokens": 553,
+              "input_token_details": {
+                "cache_read": 0
+              }
+            }
+          },
+          "type": "Generation"
+        }
+      ]
+    ]
+  }
+]
