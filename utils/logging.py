@@ -37,5 +37,5 @@ class LoggingCallback(BaseCallbackHandler):
         all_output[-1]["response"] = convert_to_dict(result['generations'])
 
         # dump all_output to json file
-        with open("./outputs/all_output.json", "w") as f:
+        with open("./outputs/llm_outputs.json", "w") as f:
             json.dump(all_output, f, indent=2)

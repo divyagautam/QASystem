@@ -30,7 +30,9 @@ You can find screenshots of some of the runs at the end of this document
     * the responses on 3 criteria for medical fact checking, safe advice and completeness.
 
 ## Logging
-The logging of prompts and responses is done using the `utils/logging.py` module. It uses callbacks to log the prompts and responses during the LLM call. The output is saved in `outputs/outputs.json`, which can be used for manual evaluation.
+* The logging of prompts and responses is done using the `utils/logging.py` module. 
+* It uses callbacks to log the prompts and responses during the LLM call. 
+* The output is saved in `outputs/llm_outputs.json`, which can be used for manual evaluation.
 
 ## Project Design
 ### RAG: The file `utils/rag.py` contains the code for RAG.
